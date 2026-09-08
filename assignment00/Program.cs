@@ -96,19 +96,19 @@ namespace assignment00
             ///see, and why?
 
 
-            static void Applydiscount(double  []  prices)
-            {
-                prices[0] -= 5;
-            }
-            static void Main(string[] args)
+            ///   static void Applydiscount(double  []  prices)
+            ///   {
+            ///       prices[0] -= 5;
+            ///   }
+            ///  static void Main(string[] args)
 
-            {
-                double[]  Prices = {   25.5  ,  40.0   };
+            ///  {
+            ///  double[]  Prices = {   25.5  ,  40.0   };
 
-                Applydiscount(  Prices  );
+            ///     Applydiscount(  Prices  );
 
-                Console.WriteLine(  Prices[0]);
-            }
+            /// Console.WriteLine(  Prices[0]);
+            /// }
 
 
 
@@ -116,6 +116,29 @@ namespace assignment00
 
             #endregion
 
+            #region Q7
+            /// Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+            /// Call it and print pages afterward. How is the result different from question 5 ?
+
+
+            static void addbonuspagesbyref(ref int pages)
+            {
+                pages += 50;
+            }
+
+            static void Main(string[] args)
+              {
+                int pages = 400;
+
+                addbonuspagesbyref(ref pages);
+                console.writeline(pages);
+            }
+
+
+
+
+
+            #endregion
 
 
 
