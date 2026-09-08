@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment00
 {
@@ -33,16 +34,36 @@ namespace assignment00
             /// q3 : 3-Write a method called PrintWelcomeMessage that takes no parameters and prints
             /// "Welcome to the Library!".Call it from Main.
             /// fun out of main 
-            static void printwelcomemessage()
-            {
-                Console.WriteLine("Welcometo Library !");
-            }
+            ///   static void printwelcomemessage()
+            ///    {
+            ///         Console.WriteLine("Welcometo Library !");
+            ///     }
 
             /// this main 
+            ///    static void Main(string[] args)
+            ///   {
+            ///      printwelcomemessage();
+            ///   }
+
+
+
+            #endregion
+
+            #region     Q4
+
+            /// q4 : 4-Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
+            /// "Clean Code".
+            /// OUT OF MAIN 
+            static void printbooktitle(string Title)
+            {
+                Console.WriteLine("booktitle: " + Title);
+            }
+            /// THIS MAIN 
             static void Main(string[] args)
             {
-                printwelcomemessage();
+                printbooktitle("cleancode");
             }
+
 
 
 
@@ -54,8 +75,34 @@ namespace assignment00
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         }
-        
+
 
 
 
