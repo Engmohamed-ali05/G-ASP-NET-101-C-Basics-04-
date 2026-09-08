@@ -121,18 +121,18 @@ namespace assignment00
             /// Call it and print pages afterward. How is the result different from question 5 ?
 
 
-            static void addbonuspagesbyref(ref int pages)
-            {
-                pages += 50;
-            }
+            /// static void addbonuspagesbyref(ref int pages)
+            /// {
+            ///     pages += 50;
+            ///  }
 
-            static void Main(string[] args)
-              {
-                int pages = 400;
+            /// static void Main(string[] args)
+            /// {
+            ///   int pages = 400;
 
-                addbonuspagesbyref(ref pages);
-                console.writeline(pages);
-            }
+            ///   addbonuspagesbyref(ref pages);
+            ///   console.writeline(pages);
+            /// }
 
 
 
@@ -141,6 +141,29 @@ namespace assignment00
             #endregion
 
 
+            #region Q8 
+            /// Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
+            /// new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length
+            ///afterward.
+
+
+            static void replacearray(ref double[] prices)
+            {
+                prices = new double[] { 10.0, 12.5, 15.0 };
+            }
+
+            static void Main(string[] args)
+            {
+                double[] prices = { 25.5, 40.0 };
+
+                replacearray(ref prices);
+
+Console.WriteLine( prices.Length ); 
+            }
+
+
+
+            #endregion
 
 
 
