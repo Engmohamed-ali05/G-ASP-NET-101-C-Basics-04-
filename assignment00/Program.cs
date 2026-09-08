@@ -74,19 +74,44 @@ namespace assignment00
             /// Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
             ///  int pages = 400; and print pages afterward. What do you expect to see, and why?
 
-            static void addbonuspages(int Pages)
+            ///  static void addbonuspages(int Pages)
+            /// {
+            /// }
+            /// static void Main(string[] args)
+
+            ///  {
+            ///    int Pages = 400;
+
+            ///   addbonuspages(pages);
+
+            ///    Console.WriteLine(pages);
+            ///  }
+
+
+            #endregion
+
+            #region Q6
+            ///Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+            ///  with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward.What do you expect to
+            ///see, and why?
+
+
+            static void Applydiscount(double  []  prices)
             {
-                Pages += 50;
+                prices[0] -= 5;
             }
             static void Main(string[] args)
 
             {
-                int Pages = 400;
+                double[]  Prices = {   25.5  ,  40.0   };
 
-                addbonuspages(pages);
+                Applydiscount(  Prices  );
 
-                Console.WriteLine(pages);
+                Console.WriteLine(  Prices[0]);
             }
+
+
+
 
 
             #endregion
