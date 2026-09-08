@@ -234,17 +234,30 @@ namespace assignment00
 
             #region Q6 part 2
             /// Build the same sentence as above, but using string interpolation ($"...").
-            string title = "cleancode";
-            int page = 464;
+            /// string title = "cleancode";
+            /// int page = 464;
 
-            string Sentence2 = $"book: {title}, pages: {page}";
+            ///  string Sentence2 = $"book: {title}, pages: {page}";
 
-            Console.WriteLine( Sentence2 );
+            /// Console.WriteLine( Sentence2 );
 
 
 
             #endregion
 
+            #region Q7 part 2
+            ///Build the same sentence again, but using string.Format(). 
+            string title = "cleanccode";
+            int page  =  464;
+
+            string Sentence3 = string.format("Book: {0}, Pages: {1}", title, page);
+
+            Console.WriteLine    (   Sentence3 );
+
+
+
+
+            #endregion
 
 
 
