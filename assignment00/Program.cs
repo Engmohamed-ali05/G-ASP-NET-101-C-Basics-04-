@@ -54,21 +54,42 @@ namespace assignment00
             /// q4 : 4-Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
             /// "Clean Code".
             /// OUT OF MAIN 
-            static void printbooktitle(string Title)
-            {
-                Console.WriteLine("booktitle: " + Title);
-            }
+            ///  static void printbooktitle(string Title)
+            ///   {
+            ///     Console.WriteLine("booktitle: " + Title);
+            ///   }
             /// THIS MAIN 
-            static void Main(string[] args)
-            {
-                printbooktitle("cleancode");
-            }
+            ///  static void Main(string[] args)
+            ///   {
+            ///     printbooktitle("cleancode");
+            //   }
 
 
 
 
             #endregion
 
+
+            #region Q5
+            /// Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+            ///  int pages = 400; and print pages afterward. What do you expect to see, and why?
+
+            static void addbonuspages(int Pages)
+            {
+                Pages += 50;
+            }
+            static void Main(string[] args)
+
+            {
+                int Pages = 400;
+
+                addbonuspages(pages);
+
+                Console.WriteLine(pages);
+            }
+
+
+            #endregion
 
 
 
