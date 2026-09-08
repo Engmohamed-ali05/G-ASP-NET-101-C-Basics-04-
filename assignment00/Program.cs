@@ -19,15 +19,35 @@ namespace assignment00
             ///  Q2 : 2-Create a 2x2 multidimensional array int[,] shelfCopies where shelf 0 has 3, 5 copies and
             /// shelf 1 has 1, 4 copies.Print the number of copies on shelf 1, slot 0.
 
-            int[,] shelfcopies =
-                 {
-                    { 3, 5 }, { 1, 4 }
-                                    
-                 }; 
+            ///  int[,] shelfcopies =
+            ///    {
+            ///    { 3, 5 }, { 1, 4 }
 
-            Console.WriteLine ( shelfcopies [1, 0] );
+            /// }; 
 
-            #endregion 
+            /// Console.WriteLine ( shelfcopies [1, 0] );
+
+            #endregion
+
+            #region Q3
+            /// q3 : 3-Write a method called PrintWelcomeMessage that takes no parameters and prints
+            /// "Welcome to the Library!".Call it from Main.
+            /// fun out of main 
+            static void printwelcomemessage()
+            {
+                Console.WriteLine("Welcometo Library !");
+            }
+
+            /// this main 
+            static void Main(string[] args)
+            {
+                printwelcomemessage();
+            }
+
+
+
+            #endregion
+
 
 
 
@@ -35,5 +55,10 @@ namespace assignment00
 
 
         }
+        
+
+
+
+
     }
 }
