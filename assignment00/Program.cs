@@ -1,4 +1,5 @@
 ﻿using System.Drawing;
+using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace assignment00
@@ -185,10 +186,10 @@ namespace assignment00
             #region Q2 part 2
             /// Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals() to check if they point to the same object in memory.
 
-            string title1 = "cleancode";
-            string title2 = "cleancode";
+           /// string title1 = "cleancode";
+           /// string title2 = "cleancode";
 
-            Console.WriteLine(ReferenceEquals(title1, title2));
+            ///Console.WriteLine(ReferenceEquals(title1, title2));
 
 
 
@@ -197,6 +198,22 @@ namespace assignment00
             #endregion
 
 
+            #region Q4 part 2
+            ///-Using the StringBuilder from the question above, use Replace() to change "Book List" into "Library". Print the result.
+            
+            StringBuilder sb = new StringBuilder();
+
+            sb.Append("Book List");
+            sb.Append(" - Updated");
+
+            sb.Replace("Book List", "Library");
+
+            Console.WriteLine(sb);
+
+
+
+
+            #endregion
 
 
 
