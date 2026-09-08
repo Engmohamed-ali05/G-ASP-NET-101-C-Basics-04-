@@ -220,18 +220,30 @@ namespace assignment00
             #region Q5 part 2
 
             ///Given string title = "Clean Code"; and int pages = 464;, build the sentence "Book: Clean Code, Pages: 464" using the + operator. 
-            string title = "cleancode";
-            int page = 464;
+            /// string title = "cleancode";
+            ///int page = 464;
 
-            string Sentence = "book: " + title + ", pages: " + page;
+            /// string Sentence = "book: " + title + ", pages: " + page;
 
-            Console.WriteLine(Sentence);
+            ///Console.WriteLine(Sentence);
 
 
 
             #endregion
 
 
+            #region Q6 part 2
+            /// Build the same sentence as above, but using string interpolation ($"...").
+            string title = "cleancode";
+            int page = 464;
+
+            string Sentence2 = $"book: {title}, pages: {page}";
+
+            Console.WriteLine( Sentence2 );
+
+
+
+            #endregion
 
 
 
