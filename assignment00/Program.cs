@@ -147,24 +147,39 @@ namespace assignment00
             ///afterward.
 
 
-            static void replacearray(ref double[] prices)
-            {
-                prices = new double[] { 10.0, 12.5, 15.0 };
-            }
+            ///   static void replacearray(ref double[] prices)
+            ///  {
+            ///      prices = new double[] { 10.0, 12.5, 15.0 };
+            ///
+            ///   static void Main(string[] args)
+            ///   {
+            ///     double[] prices = { 25.5, 40.0 };
 
-            static void Main(string[] args)
-            {
-                double[] prices = { 25.5, 40.0 };
+            ///  replacearray(ref prices);
 
-                replacearray(ref prices);
+            ///Console.WriteLine( prices.Length ); 
+            ///  }
 
-Console.WriteLine( prices.Length ); 
-            }
+
 
 
 
             #endregion
 
+
+            #region Q1 part 2
+            /// Declare string title = "clean code";. Call title.ToUpper() and store it in a new variable upperTitle. Print both title and upperTitle to show that title did not change
+
+            string title = "clean code";
+
+            string upperTitle = title.ToUpper();
+
+            Console.WriteLine(title);
+            Console.WriteLine(upperTitle);
+
+
+
+            #endregion
 
 
 
